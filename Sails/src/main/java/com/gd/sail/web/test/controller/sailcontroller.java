@@ -16,7 +16,17 @@ public class sailcontroller {
 			ModelAndView modelAndView) throws Throwable{
 
 		
-		modelAndView.setViewName("main/haha");
+		modelAndView.setViewName("main/haha");	
+		
+		return modelAndView;
+	}
+	@RequestMapping(value="/pLogin")
+	public ModelAndView pLogin(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+
+		
+		modelAndView.setViewName("project/pLogin");
 		
 		return modelAndView;
 	}
