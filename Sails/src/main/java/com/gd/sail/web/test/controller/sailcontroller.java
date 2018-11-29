@@ -30,5 +30,26 @@ public class sailcontroller {
 		
 		return modelAndView;
 	}
+	@RequestMapping(value="/Sign")
+	public ModelAndView Sign(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		
+		modelAndView.setViewName("project/Sign");
+		
+		return modelAndView;
+	}
+	
+	@RequestMapping(value="/find")
+	public ModelAndView find(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		
+		modelAndView.setViewName("project/find");
+		
+		return modelAndView;
+	}
 
 }

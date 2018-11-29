@@ -36,7 +36,7 @@
 	height: 25px;
 	margin-bottom: 8px;
 	font-size: 18pt;
-	border-radius: 50px;
+	border-radius: 10px;
 	text-align: center;
 }
 #textArea{
