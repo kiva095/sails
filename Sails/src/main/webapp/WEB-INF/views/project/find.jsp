@@ -20,16 +20,43 @@
 	font-size: 20pt;
 }
 #left{
+	vertical-align : top;
 	display: inline-block;
 	width: 400px;
 	border-right: 1px solid #9e9e9e;
 	height: 400px;
+	font-size: 20pt;
 }
 #right{
+	vertical-align : top;
 	display: inline-block;
 	width: 400px;
 	border-left: 1px solid #9e9e9e;
 	height: 400px;
+	font-size: 20pt;
+}
+.FD{
+	text-align: center;
+	font-size: 15pt;
+	margin: 20px 0px;
+}
+#lf{
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 150px;
+	vertical-align : top;
+}
+#lf2{
+	vertical-align : top;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+input{
+	height: 25px;
+	font-size: 13pt;
+	width: 200px;
+	border-radius: 8px;
+	text-align: center;
 }
 </style>
 </head>
@@ -39,8 +66,30 @@
 	<div id="logo">
 		로고등등 여러개
 	</div><br>
-	<div id="left"></div>
-	<div id="right"></div>
+	<div id="left">
+		<div class="FD"><h1>아이디 찾기</h1></div>
+		<div id="lfl">
+			<div id="lf">이메일</div><div id="lf2"><input type="text" id="email1" name="email"></div>
+		</div>
+		<div id="lfl">
+			<div id="lf">생년월일</div><div id="lf2"><input type="text" id="birth1" name="birth"></div>
+		</div>
+		<div><input type="button" id="IFBtn" value="아이디 찾기"> </div>
+	</div>
+	<div id="right">
+		<div class="FD"><h1>비밀번호 찾기</h1></div>
+			<div id="lfl">
+				<div id="lf">아이디</div><div id="lf2"><input type="text" id=id name="id"></div>
+			</div>
+			<div id="lfl">
+				<div id="lf">이메일</div><div id="lf2"><input type="text" id="email2" name="email"></div>
+			</div>
+			<div id="lfl">
+				<div id="lf">생년월일</div><div id="lf2"><input type="text" id="birth2" name="birth"></div>
+			</div>
+			<div><input type="button" id="IFBtn" value="아이디 찾기"> 
+		</div>
+	</div>
 
 </div>
 </body>
