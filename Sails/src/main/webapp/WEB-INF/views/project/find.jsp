@@ -24,7 +24,7 @@
 	display: inline-block;
 	width: 400px;
 	border-right: 1px solid #9e9e9e;
-	height: 400px;
+	height: 300px;
 	font-size: 20pt;
 }
 #right{
@@ -32,7 +32,7 @@
 	display: inline-block;
 	width: 400px;
 	border-left: 1px solid #9e9e9e;
-	height: 400px;
+	height: 300px;
 	font-size: 20pt;
 }
 .FD{
@@ -58,7 +58,13 @@ input{
 	border-radius: 8px;
 	text-align: center;
 }
+#backBtn{
+	margin-top: 50px;
+}
+
 </style>
+<script type="text/javascript">
+</script>
 </head>
 <body>
 <div id="BG">
@@ -74,7 +80,7 @@ input{
 		<div id="lfl">
 			<div id="lf">생년월일</div><div id="lf2"><input type="text" id="birth1" name="birth"></div>
 		</div>
-		<div><input type="button" id="IFBtn" value="아이디 찾기"> </div>
+		<div ><input type="button" id="IFBtn" value="아이디 찾기"> </div>
 	</div>
 	<div id="right">
 		<div class="FD"><h1>비밀번호 찾기</h1></div>
@@ -87,9 +93,9 @@ input{
 			<div id="lfl">
 				<div id="lf">생년월일</div><div id="lf2"><input type="text" id="birth2" name="birth"></div>
 			</div>
-			<div><input type="button" id="IFBtn" value="아이디 찾기"> 
-		</div>
+			<div ><input type="button" id="PFBtn" value="비밀번호 찾기"> </div>
 	</div>
+			<div id="backBtn"><input type="button" value="메인페이지 이동" id="mainBtn" > </div>
 
 </div>
 </body>
