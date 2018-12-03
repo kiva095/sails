@@ -61,5 +61,15 @@ public class sailcontroller {
 		
 		return modelAndView;
 	}
+	@RequestMapping(value="/ADLeft")
+	public ModelAndView ADLeft(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		
+		modelAndView.setViewName("project/ADLeft");
+		
+		return modelAndView;
+	}
 
 }
