@@ -5,8 +5,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>관리자 페이지</title>
+<style type="text/css">
+#귀찮{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 700px;
+}
+</style>
 </head>
 <body>
-
+<div id="귀찮">
+	<div><h1>회원 관리</h1></div>
+	
+</div>
 </body>
 </html>

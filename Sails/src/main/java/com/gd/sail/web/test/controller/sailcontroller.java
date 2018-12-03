@@ -51,5 +51,15 @@ public class sailcontroller {
 		
 		return modelAndView;
 	}
+	@RequestMapping(value="/ADMemPage")
+	public ModelAndView ADMemPage(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		
+		modelAndView.setViewName("project/ADMemPage");
+		
+		return modelAndView;
+	}
 
 }
