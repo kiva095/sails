@@ -16,7 +16,21 @@
 <body>
 <div id="귀찮">
 	<div><h1>회원 관리</h1></div>
-	
+	<table>
+		<thead>
+			<th>no</th>
+			<th>이름</th>
+			<th>등급</th>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<select>
+		<option>모두 보기</option>
+		<option>관리자</option>
+		<option>일반회원</option>
+		<option>제한</option>
+		<option>탈퇴</option>
+	</select>
 </div>
 </body>
 </html>
