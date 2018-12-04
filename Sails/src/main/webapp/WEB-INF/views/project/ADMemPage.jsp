@@ -38,38 +38,39 @@ thead tr{
 	height: 30px;
 	background-color : gray;
 }
-#my{
-	text-align: right;
-}
+
 #Ri{
 	display: inline-block;
 	vertical-align: top;
 }
-#logout{
-	border-radius: 7px;
-}
 #Btn{
-	border-radius: 7px;
 	vertical-align: bottom;
 	margin-top: 200px;
 }
-#delBtn{
-	border-radius: 7px;
+#searchArea{
+	margin-top: 10px;
 }
- 
-
+#PGArea{
+	margin-top: 10px;
+}
+input[type='button'] {
+	background-color: #D8D8D8;
+	border-radius: 5px;
+}
+#memAD{
+	background-color: gray;
+	 color: #ffffff;
+}
 
 </style>
 </head>
 <body>
-<div id="my">
-	hahaha 님 <input type="button" value="로그아웃" id="logout" >
-</div>
 
+<c:import url="/ADTop"></c:import>
 <c:import url="/ADLeft"></c:import>
  
 <div id="귀찮">
-	<div><h1>회원 관리</h1></div>
+	<div style="text-align: left;"><h1>회원 관리</h1></div>
 	<div id="TB">
 		<table class="List">
 			<colgroup>
@@ -105,6 +106,18 @@ thead tr{
 				</tr>
 			</tbody>
 		</table>
+		<!-- 페이징 들어갈 부분 -->
+		<div id="PGArea">
+			<input type="button" value="<<">
+			<input type="button" value="<">
+			<input type="button" value="1">
+			<input type="button" value=">">
+			<input type="button" value=">>">
+		</div>
+		<div id="searchArea">
+			<input type="text" id="SearchT" name="SearchT" placeholder="이름 검색">
+			<input type="button" id="SearchBtn" value="검색">
+		</div>
 	</div>
 	
 	<div id="Ri">

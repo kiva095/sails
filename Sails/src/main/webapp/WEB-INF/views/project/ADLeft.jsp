@@ -29,7 +29,6 @@
 }
 .MenuBtn:hover{
    background-color: #6E6E6E;
-   font-size: 15pt;
    color: #ffffff;
 }
 </style>
