@@ -104,7 +104,8 @@
 			style="border-radius: 15px; background-color: #BDBDBD; color: white; text-align: center; 
 			width: 100px; padding: 5px; margin-top: 5px; margin-left: 5px;">
 			<input type="text" readonly="readonly" value="세일정보" 
-			style=" width: 70px; bacground-color: black; color: white;">
+			style=" width: 70px; background-color: #000000; color: white; text-align: center;
+			border-radius: 10px; margin-left: 20px;">
 		</div>
 		<div class="playstation">
 		</div>
