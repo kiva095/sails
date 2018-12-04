@@ -28,8 +28,10 @@ body{
    	-webkit-appearance: none; /* 화살표 없애기 for chrome*/
    	-moz-appearance: none;    /* 화살표 없애기 for firefox*/
    	appearance: none;         /* 화살표 없애기 공통*/
-   	background: url('select-arrow.png') no-repeat 95% 50%; /* 화살표 아이콘 추가 */       
    	
+}
+table{
+	border-collapse: 0px;
 }
 #TB{
 	display: inline-block;
