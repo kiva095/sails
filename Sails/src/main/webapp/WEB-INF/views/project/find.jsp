@@ -61,9 +61,22 @@ input{
 #backBtn{
 	margin-top: 50px;
 }
-
+#loginBtn{
+	width: 80px;
+	margin-left: 20px;
+	text-align: center;
+}
 </style>
+<script type="text/javascript" src="resources/script/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
+$(document).ready(function(){
+	$("#loginBtn").on("click",function(){
+		location.href="pLogin";
+	});
+	$("#mainBtn").on("click",function(){
+		location.href="SampleMain2";
+	});
+});
 </script>
 </head>
 <body>
@@ -95,7 +108,7 @@ input{
 			</div>
 			<div ><input type="button" id="PFBtn" value="비밀번호 찾기"> </div>
 	</div>
-			<div id="backBtn"><input type="button" value="메인페이지 이동" id="mainBtn" > </div>
+			<div id="backBtn"><input type="button" value="메인페이지 이동" id="mainBtn" > <input type="button" value="로그인 " id="loginBtn" >  </div>
 
 </div>
 </body>

@@ -30,14 +30,16 @@
 	height : 100px;
 	background-color: gray;
 	font-size: 12pt;
+	margin-bottom: 20px;
 }
 #id, #pw{
-	width : 200px;
-	height: 25px;
+	width : 300px;
+	height: 35px;
 	margin-bottom: 8px;
 	font-size: 18pt;
 	border-radius: 10px;
 	text-align: center;
+	
 }
 #textArea{
 	display: inline-block;
@@ -45,8 +47,8 @@
 }
 #loginBtn{
 	display: inline-block;
-	height: 70px;
-	width : 60px;
+	height: 90px;
+	width : 80px;
 	vertical-align: top;
 	border-radius: 10px;
 }
@@ -54,6 +56,14 @@
 <script type="text/javascript" src="resources/script/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+	
+	$("#SignBtn").on("click",function(){
+		location.href="Sign";
+	});
+	$("#findBtn").on("click",function(){
+		location.href="find";
+	});
+	
 	
 });
 </script>
@@ -65,14 +75,14 @@ $(document).ready(function(){
 		<div id="BT">로고 등등</div>
 		<div id="textArea">
 			<form action="#" >
-				<input type="text" id="id" name="id" ><br>
-				<input type="password" id="pw" name="pw">
+				<input type="text" id="id" name="id"  maxlength="10" ><br>
+				<input type="password" id="pw" name="pw"  maxlength="20">
 			</form>
 			</div>
 			<input type="button" value="로그인" id="loginBtn">
 		<div id="btnArea">
-			<input type="button" value="회원가입" >
-			<input type="button" value="아이디/비밀번호 찾기" > 
+			<input type="button" value="회원가입" id="SignBtn" >
+			<input type="button" value="아이디/비밀번호 찾기" id="findBtn" > 
 		</div>
 	</div>
 </div>

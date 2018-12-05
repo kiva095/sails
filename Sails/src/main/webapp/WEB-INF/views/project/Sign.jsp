@@ -53,6 +53,17 @@ input{
 	width: 150px;
 }
 </style>
+<script type="text/javascript" src="resources/script/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("#backBtn").on("click",function(){
+		location.href="pLogin";
+	});
+
+	
+});
+</script>
 
 </head>
 <body>

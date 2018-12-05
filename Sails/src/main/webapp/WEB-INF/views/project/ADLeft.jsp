@@ -32,7 +32,25 @@
    color: #ffffff;
 }
 </style>
-
+<script type="text/javascript" src="resources/script/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("#memAD").on("click",function(){
+		location.href="ADMemPage";
+	});
+	$("#boardAD").on("click",function(){
+		location.href="ADBoard";
+	});
+	$("#benAD").on("click",function(){
+		location.href="ADBen";
+	});
+	$("#QnAAD").on("click",function(){
+		location.href="ADQnA";
+	});
+	
+});
+</script>
 
 <div class="Menu" align="center">
 <!-- 메뉴 -->
