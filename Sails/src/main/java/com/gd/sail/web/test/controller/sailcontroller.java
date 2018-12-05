@@ -121,5 +121,15 @@ public class sailcontroller {
 		
 		return modelAndView;
 	}
+		@RequestMapping(value="/QnADetail")
+		public ModelAndView QnADetail(
+				@RequestParam HashMap<String,String> params,
+				ModelAndView modelAndView) throws Throwable{
+			
+			
+			modelAndView.setViewName("project/QnADetail");
+			
+			return modelAndView;
+	}
 
 }
