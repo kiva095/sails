@@ -102,10 +102,18 @@
 	width: 580px;
 	margin-left: 15px;
 }
+.back {
+	border: 0px;
+	border-radius: 10px;
+	height: 33px;
+	color: white;
+	background: #0431B4;
+}
 </style>
 </head>
 <body>
 <!--백그라운드  -->
+<button class="back">이전화면</button>
 <div class="background">
 	<!--게임로고  -->
 	<img src="resources/images/test.jpg" class="logo">
