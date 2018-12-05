@@ -131,5 +131,15 @@ public class sailcontroller {
 			
 			return modelAndView;
 	}
+		
+	@RequestMapping(value="/MenuSchLogin")
+	public ModelAndView MenuSchLogin(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+					
+		modelAndView.setViewName("project/MenuSchLogin");
+		
+		return modelAndView;
+	}
 
 }
