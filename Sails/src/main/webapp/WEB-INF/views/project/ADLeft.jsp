@@ -41,6 +41,6 @@
    <div><input type="button" class="MenuBtn" id="memAD" value="회원관리"></div>
    <div><input type="button" class="MenuBtn" id="boardAD" value="게시물 관리"></div>
    <div><input type="button" class="MenuBtn" id="benAD" value="신고 관리"></div>
-   <div><input type="button" class="MenuBtn" id="Q&AAD" value="Q&A"></div>
+   <div><input type="button" class="MenuBtn" id="QnAAD" value="Q&A"></div>
 </div>
 

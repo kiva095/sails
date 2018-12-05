@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/*왼쪽 메뉴바*/
+.Menu{
+	width: 150px;
+	height: 600px;
+	display: inline-block;
+	float: left;
+	/* position: absolute; */
+	/*background-color: yellow;*/
+}
+.logo{
+	width: 130px;
+	height: 130px;
+	margin: 10px;
+	background: linear-gradient(#FAFAFA, #D8D8D8);
+	background-image: url("../images/blogimgs/heroes.gif");
+	background-size: contain;
+}
+.MenuBtn{
+	margin : 2px 12px 2px 12px;
+	width : calc(100% - 40px);
+	height: 40px;
+	background-color: #D8D8D8;
+	font-size: 14pt;
+	border-radius: 5px;
+}
+.MenuBtn:hover{
+	background-color: #6E6E6E;
+	font-size: 15pt;
+	color: #ffffff;
+}
+.moneycss{
+	font-size: 7pt;
+}
+#conMoney{
+	background-color: #E6E6E6;
+	text-align: center;
+	color: #ffffff;
+	
+}
+
+
+/*검색 및 로그인 영역*/
+.SrchLgBox{
+	/* background-color : green; */
+	min-width : 580px;
+	width: calc(100% - 160px);
+	margin-left : 10px;
+	height: 80px;
+	display: inline-block;
+	/*display: inline;*/
+	
+	
+}
+.SrArea{display: inline-block; float: left; margin: 15px 0 15px 10px;}
+#srchBox{
+	width: 500px;
+	height: 50px;
+	padding: 5px;
+	border: 3px solid #BDBDBD;
+	border-radius: 0.5em;
+	font-size: 14pt medium; 
+}
+#srchBox:focus {
+	border: 3px solid #D8D8D8 ;
+	
+}
+#SrchBtn{
+	width: 70px;
+	height: 46px;
+	border: 0px;
+	border-radius: 5px;
+	background-color: #D8D8D8;
+	font-size: 15pt;
+}
+#SrchBtn:hover{
+	width : 68px;
+	height : 44px;
+	border : 2px solid #D8D8D8;
+	background-color: #6E6E6E;
+	color: #ffffff;
+	font-size: 15pt;
+}
+
+@media screen and (max-width:973px) {
+	.LoginArea{
+		display: none;
+	}
+}
+@media screen and (min-width:974px) {
+	.LoginArea{
+		text-align : right;
+		margin-top : 5px;
+		margin-right : 5px;
+		float: right;
+		width: 200px;
+		height : 30px;
+		/* background-color: #ffffff; */
+		display: table-cell;
+	}
+}
+
+#LoginBtn{
+	width: 70px;
+	height: 28px;
+	border: 0px;
+	border-radius: 5px;
+	background-color: #D8D8D8;
+	color: white;
+}
+
+#NewMemBtn{
+	color: white;
+	width: 70px;
+	height: 28px;
+	border: 0px;
+	border-radius: 5px;
+	background-color: #D8D8D8;
+
+}
+
+/* ---------------------세컨드 박스----------------------*/
+.secondBox{
+	margin-left: 10px;
+	margin-top : 20px;
+	float: left;
+	align-content : center;
+	 width: 1180px;
+	 height: 600px;
+	 background-color: #F2F2F2;
+	 border-radius : 1em;
+	 position: fixed;
+	 left: 150px; /*메뉴 가로크기에 영향*/
+	 padding: 10px 10px 0px 10px;
+}
+.main_box{
+	width: 550px;
+	height : 590px;
+	display: inline-block;
+	/*float: left;*/
+	text-align: center;
+	overflow-y: scroll;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+/*게임 목록 나열*/
+.Gamebox{
+	text-align: center;
+	vertical-align: top;
+}
+#Game{
+	margin : 5px 5px 5px 5px;
+	width: 150px;
+	height: 230px;
+	display: inline-block;
+	background-color: white;
+	border-radius: 10px;
+	vertical-align: top;
+}
+#Game_hov{
+text-align : center;
+/* color : black; */
+font-size : 16pt;
+/* position:absolute; */
+z-index: 3;
+display: inline-block;
+width : 150px;
+height : 230px;
+display: none;
+}
+
+/*게시판 노출 영역*/
+.boardBox{ /* background-color : #585858; */
+	display : inline-block;
+	width: 550px;
+	height: 590px;
+	vertical-align: top;
+	margin-left: 20px;
+}
+
+/*--------------------테이블----------------------*/
+/*공통 css*/
+table{border-collapse: collapse; padding : 0px;}
+.tablecss{
+	
+}
+.tablecss thead tr{
+	height: 40px;
+	border-bottom: 3px solid #585858;
+}
+.tablecss tbody tr{
+	height: 30px;
+	border-bottom: 1px solid #585858;
+	}
