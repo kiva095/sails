@@ -130,6 +130,28 @@ public class sailcontroller {
 			modelAndView.setViewName("project/QnADetail");
 			
 			return modelAndView;
-	}
+}
+		@RequestMapping(value="/SearchPage")
+		public ModelAndView SearchPage(
+				@RequestParam HashMap<String,String> params,
+				ModelAndView modelAndView) throws Throwable{
+			
+			
+			modelAndView.setViewName("project/SearchPage");
+			
+			return modelAndView;
+}
+		
+		
+		@RequestMapping(value="/SampleMain2")
+		public ModelAndView SampleMain2(
+				@RequestParam HashMap<String,String> params,
+				ModelAndView modelAndView) throws Throwable{
+			
+			
+			modelAndView.setViewName("project/SampleMain2");
+			
+			return modelAndView;
+		}
 
 }
