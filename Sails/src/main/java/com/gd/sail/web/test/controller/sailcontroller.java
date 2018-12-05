@@ -152,4 +152,66 @@ public class sailcontroller {
 		
 		return modelAndView;
 	}
+	@RequestMapping(value="/ADBen")
+	public ModelAndView ADBen(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		
+		modelAndView.setViewName("project/ADBen");
+		
+		return modelAndView;
+	}
+	@RequestMapping(value="/ADBenDetail")
+	public ModelAndView ADBenDetail(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		
+		modelAndView.setViewName("project/ADBenDetail");
+		
+		return modelAndView;
+	}
+	@RequestMapping(value="/ADQnA")
+	public ModelAndView ADQnA(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		
+		modelAndView.setViewName("project/ADQnA");
+		
+		return modelAndView;
+	}
+		@RequestMapping(value="/QnADetail")
+		public ModelAndView QnADetail(
+				@RequestParam HashMap<String,String> params,
+				ModelAndView modelAndView) throws Throwable{
+			
+			
+			modelAndView.setViewName("project/QnADetail");
+			
+			return modelAndView;
+}
+		@RequestMapping(value="/SearchPage")
+		public ModelAndView SearchPage(
+				@RequestParam HashMap<String,String> params,
+				ModelAndView modelAndView) throws Throwable{
+			
+			
+			modelAndView.setViewName("project/SearchPage");
+			
+			return modelAndView;
+}
+		
+		
+		@RequestMapping(value="/SampleMain2")
+		public ModelAndView SampleMain2(
+				@RequestParam HashMap<String,String> params,
+				ModelAndView modelAndView) throws Throwable{
+			
+			
+			modelAndView.setViewName("project/SampleMain2");
+			
+			return modelAndView;
+		}
 }
