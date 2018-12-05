@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*팀프로젝트전용 css*/
 /*왼쪽 메뉴바*/
 .Menu{
 	width: 150px;
@@ -14,7 +14,8 @@
 	height: 130px;
 	margin: 10px;
 	background: linear-gradient(#FAFAFA, #D8D8D8);
-	background-image: url("../images/blogimgs/heroes.gif");
+	/*로고 이미지*/
+	background-image: url("");
 	background-size: contain;
 }
 .MenuBtn{
@@ -109,6 +110,24 @@
 	background-color: #D8D8D8;
 	color: white;
 }
+#LogoutBtn{
+	width: 70px;
+	height: 28px;
+	border: 0px;
+	border-radius: 5px;
+	background-color: #D8D8D8;
+	color: white;
+}
+#LoginBtn:hover{
+	border : 2px solid #D8D8D8;
+	background-color: #6E6E6E;
+}
+#LogoutBtn:hover{
+	border : 2px solid #D8D8D8;
+	background-color: #6E6E6E;
+}
+
+
 
 #NewMemBtn{
 	color: white;
@@ -117,9 +136,11 @@
 	border: 0px;
 	border-radius: 5px;
 	background-color: #D8D8D8;
-
 }
-
+#NewMemBtn:hover{
+	border : 2px solid #D8D8D8;
+	background-color: #6E6E6E;
+}
 /* ---------------------세컨드 박스----------------------*/
 .secondBox{
 	margin-left: 10px;
