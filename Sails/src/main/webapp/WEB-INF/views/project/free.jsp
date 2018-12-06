@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,7 @@
 	background: #D8D8D8;
 	width: 930px;
 	padding-bottom: 30px;
+	display: inline-block;
 }
 #writeBtn{
 	float: right;
@@ -85,8 +87,17 @@
 	width: 30px;
 }
 </style>
+<script type="text/javascript" src="resources/script/jquery/jquery-1.12.4.min.js"></script> 
+<script type="text/javascript">
+/* $(document).ready(function(){
+	$("#writeBtn").on("click", function(){
+	});
+}); */
+</script>
 </head>
 <body>
+<c:import url="/MenuSchLogin"></c:import>
+
 <!--백그라운드  -->
 <div class="background">
 	<!--자유게시판 & 글쓰기버튼  -->

@@ -61,7 +61,52 @@ $(document).ready(function(){
 		location.href="pLogin";
 	});
 
-	
+	$("#goBtn").on("click",function(){
+		
+		if($.trim($("#id").val()) == ""){
+			alert("아이디를 입력해주세요");
+			
+			$("#id").focus();
+		}else if($.trim($("#pw").val())==""){
+			
+			alert("비밀번호를 입력해주세요");
+			$("#pw").focus();
+			
+		}else if($.trim($("#email").val())==""){
+			
+			alert("이메일를 입력해주세요");
+			$("#email").focus();
+			
+		}else if($.trim($("#NM").val())==""){
+			
+			alert("이름을 입력해주세요");
+			$("#NM").focus();
+			
+		}else if($.trim($("#birth").val())==""){
+			
+			alert("생년월일 을 입력해주세요");
+			$("#birth").focus();
+			
+		}else{
+			
+			var params = $("#action").serialize();	
+			
+			$.ajax({
+				type:"post",
+				url :"SignAjax",
+				dataType:"json",
+				data : params,
+				success : function(result){
+					
+				}
+				
+			});
+			
+			
+		}
+		
+		
+	});
 });
 </script>
 
@@ -69,25 +114,28 @@ $(document).ready(function(){
 <body>
 <div id="BG">
 	<div id ="logo">로고 등 여러가지</div>
-	<div id="D">
-		<div id="LF">아이디</div><input type="text" id="id" name="id" ><div id="idCK"></div><br>
-	</div>
-	<div id="D">
-		<div id="LF">비밀번호</div><input type="password" id="pw" name="pw" ><br>
-	</div>
-	<div id="D">
-		<div id="LF">이메일</div><input type="text" id="email" name="email" ><div id="emailCK"></div><br>
-	</div>
-	<div id="D">
-		<div id="LF">이름</div><input type="text" id="NM" name="NM"><br>
-	</div>
-	<div id="D">
-		<div id="LF">성별</div><div id="SX">
-	</div>
-			<input type="radio" id="SX" name="SX" value="1">남
-			<input type="radio" id="SX" name="SX" value="2">여
+	<form action="#" id="action" method="post">
+		<div id="D">
+			<div id="LF">아이디</div><input type="text" id="id" name="id" ><div id="idCK"></div><br>
+		</div>
+		<div id="D">
+			<div id="LF">비밀번호</div><input type="password" id="pw" name="pw" ><br>
+		</div>
+		<div id="D">
+			<div id="LF">이메일</div><input type="text" id="email" name="email" ><div id="emailCK"></div><br>
+		</div>
+		<div id="D">
+			<div id="LF">이름</div><input type="text" id="NM" name="NM"><br>
+		</div>
+		<div id="D">
+			<div id="LF">성별</div>
+			<div id="SX">
+				<input type="radio" id="SX" name="SX" value="1" checked="checked">남
+				<input type="radio" id="SX" name="SX" value="2">여
+			</div>
 		</div><br>
-	<div id="LF">생년월일</div><input type="text" id="birth" name="birth" ><br>
+		<div id="LF">생년월일</div><input type="text" id="birth" name="birth" ><br>
+	</form>
 	<div id="btnAR">
 		<input type="button" id="goBtn" value="가입 완료">
 		<input type="button" id="backBtn" value="로그인 화면">
