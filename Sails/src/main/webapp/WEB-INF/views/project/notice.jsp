@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,6 +59,7 @@ tbody td{
 </style>
 </head>
 <body>
+<c:import url="/MenuSchLogin"></c:import>
 <!--Background -->
 <div class="main">
 	<!--공지사항 게시판 -->

@@ -110,10 +110,18 @@
 	background: #0431B4;
 }
 </style>
+<script type="text/javascript" src="resources/script/jquery/jquery-1.12.4.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#id").on("click", function(){
+		history.back();
+	});
+});
+</script>
 </head>
 <body>
 <!--백그라운드  -->
-<button class="back">이전화면</button>
+<button class="back" id="back">이전화면</button>
 <div class="background">
 	<!--게임로고  -->
 	<img src="resources/images/test.jpg" class="logo">

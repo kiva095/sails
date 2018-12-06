@@ -112,9 +112,7 @@ $(document).ready(function() {
 				</tr>
 			</tbody>
 		</table>
-		
 </div>
-
 <!-- 검색, 로그인 영역 -->
 <div class="SrchLgBox">
 	<div class="SrArea">

@@ -141,5 +141,14 @@ public class sailcontroller {
 		
 		return modelAndView;
 	}
+	@RequestMapping(value="/SampleMain2")
+	public ModelAndView SampleMain2(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		modelAndView.setViewName("project/SampleMain2");
+		
+		return modelAndView;
+	}
 
 }
