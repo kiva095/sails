@@ -57,7 +57,7 @@
 .SrArea{display: inline-block; float: left; margin: 15px 0 15px 10px;}
 #srchBox{
 	width: 500px;
-	height: 50px;
+	height: 30px;
 	padding: 5px;
 	border: 3px solid #BDBDBD;
 	border-radius: 0.5em;
