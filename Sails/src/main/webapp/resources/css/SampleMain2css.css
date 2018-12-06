@@ -15,7 +15,7 @@
 	margin: 10px;
 	background: linear-gradient(#FAFAFA, #D8D8D8);
 	/*로고 이미지*/
-	background-image: url("../images/blogimgs/saleLogo.gif");
+	background-image: url("../images/saleLogo.png");
 	background-size: contain;
 }
 .MenuBtn{
@@ -57,7 +57,7 @@
 .SrArea{display: inline-block; float: left; margin: 15px 0 15px 10px;}
 #srchBox{
 	width: 500px;
-	height: 50px;
+	height: 30px;
 	padding: 5px;
 	border: 3px solid #BDBDBD;
 	border-radius: 0.5em;
