@@ -1,14 +1,25 @@
 package com.gd.sail.web.test.controller;
 
 import java.util.HashMap;
+import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.gd.sail.web.test.service.ISailService;
 
 @Controller
 public class sailcontroller {
+	
+	@Autowired
+	public ISailService iSailService;
+	
 	
 	@RequestMapping(value="/haha")
 	public ModelAndView test5(
@@ -138,6 +149,35 @@ public class sailcontroller {
 			ModelAndView modelAndView) throws Throwable{
 					
 		modelAndView.setViewName("project/MenuSchLogin");
+		
+		return modelAndView;
+	}
+	@RequestMapping(value="/SignAjax" , method = RequestMethod.POST, produces = "test/json;charset=UTF-8")
+	@ResponseBody
+	public String SignAjax(@RequestParam HashMap<String,String> param)throws Throwable{
+		ObjectMapper mapper = new ObjectMapper();
+		Map<String,Object> modelMap = new HashMap<String,Object>(); 
+		
+		boolean res = false;
+		try {
+			
+			iSailService.Sign(param);
+			
+			res= true;
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
+		
+		
+		return "";
+	}
+	@RequestMapping(value="/SampleMain2")
+	public ModelAndView SampleMain2(
+			@RequestParam HashMap<String,String> params,
+			ModelAndView modelAndView) throws Throwable{
+		
+		modelAndView.setViewName("project/SampleMain2");
 		
 		return modelAndView;
 	}
