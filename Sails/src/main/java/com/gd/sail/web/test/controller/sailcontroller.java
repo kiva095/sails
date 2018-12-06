@@ -152,7 +152,6 @@ public class sailcontroller {
 		
 		return modelAndView;
 	}
-<<<<<<< HEAD
 	@RequestMapping(value="/SignAjax" , method = RequestMethod.POST, produces = "test/json;charset=UTF-8")
 	@ResponseBody
 	public String SignAjax(@RequestParam HashMap<String,String> param)throws Throwable{
@@ -173,8 +172,7 @@ public class sailcontroller {
 		
 		return "";
 	}
-=======
->>>>>>> branch 'master' of https://github.com/kiva095/sails.git
+	
 	@RequestMapping(value="/SampleMain2")
 	public ModelAndView SampleMain2(
 			@RequestParam HashMap<String,String> params,
