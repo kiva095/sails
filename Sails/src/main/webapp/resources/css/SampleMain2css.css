@@ -15,7 +15,7 @@
 	margin: 10px;
 	background: linear-gradient(#FAFAFA, #D8D8D8);
 	/*로고 이미지*/
-	background-image: url("");
+	background-image: url("../images/blogimgs/saleLogo.gif");
 	background-size: contain;
 }
 .MenuBtn{
